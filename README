@@ -1,0 +1,51 @@
+README file - ECE1387 Assignment3 B&B Partitioner
+- developer:	Zhiyuan Gu
+- date: 	Nov 19, 2019
+
+1. File list:
+-------------
+main.cpp
+Partioning.cpp
+Block.cpp
+Net.cpp
+Node.cpp
+draw.cpp
+graphics.cpp
+Partitioning.h
+Block.h
+Net.h
+Node.h
+draw.h
+graphics.h
+easygl_constrants.h
+makefile
+cct1
+cct2
+cct3
+cct4
+README
+report.pdf
+
+2. Steps to compile and run the partitioner for one of the test files
+---------------------------------------------------------------------------
+1) Type "make" in the source file folder to compile the code.
+2) Type "./BP" to run the executable.
+3) When message asking for input file path shows up, type "cct3" or other files. 
+	("cct3" is most interesting & time-consuming).
+4) When message asking for traversal type shows up, type "1" for the Breadth First Traversal. 
+	If you choose "2", the traversal will be Lower Bound First Traversal.
+5) Graphics tool window should show up. Partition result should have already be shown. (take some time for cct3)
+	Blue lines represent the branching process.
+	Yellow circles represent a partial partitioning solution.
+	Note that i) Tree branches mainly appears on the top-left part of the window.
+			 ii) Most tree branches get pruned early, but some go deep. However, none of them reach the bottom,
+					which means not all blocks are required to be partitioned to get the final result.
+			iii) If you run Lower Bound First Traversal, nodes will branch down faster than the case of Breadth		
+					First Traversal. However, time to complete partitioning will not vary much.
+			All of the above-mentioned phenomena are explained in the report.
+			
+   Press "Proceed" or "Exit" at any time to close the graphics window.
+   Total visited tree node count, total run-time, and cut size are reported in the terminal.
+
+
+Thank you for reading!
